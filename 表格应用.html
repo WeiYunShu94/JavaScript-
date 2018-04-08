@@ -7,7 +7,8 @@
 window.onload=function()
 {
 	var oTab=document.getElementById('tab1');
-	alert(oTab.getElementsByTagName('tbody')[0].getElementsByTagName('tr')[1].getElementsByTagName('td')[1].innerHTML);
+	//alert(oTab.getElementsByTagName('tbody')[0].getElementsByTagName('tr')[1].getElementsByTagName('td')[1].innerHTML);
+	alert(oTab.tBodies[0].rows[1].cells[1].innerHTML);
 }
 </script>
 </head>
