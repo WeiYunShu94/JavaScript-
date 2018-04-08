@@ -7,8 +7,19 @@
 window.onload=function()
 {
 	var oTab=document.getElementById('tab1');
-	//alert(oTab.getElementsByTagName('tbody')[0].getElementsByTagName('tr')[1].getElementsByTagName('td')[1].innerHTML);
-	alert(oTab.tBodies[0].rows[1].cells[1].innerHTML);
+	
+	//alert(oTab.tBodies[0].rows.length);
+	for(var i=0;i<oTab.tBodies[0].rows.length;i++)
+	{
+		if(i%2)
+		{
+			oTab.tBodies[0].rows[i].style.background='#ccc';	
+		}
+		else
+		{
+			oTab.tBodies[0].rows[i].style.background='';	
+		}
+	}
 }
 </script>
 </head>
